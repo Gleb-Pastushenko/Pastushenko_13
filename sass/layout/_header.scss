@@ -1,0 +1,92 @@
+header {
+    background: url('../images/header-background.png') no-repeat center/cover;
+    text-align: center;
+
+    .main-container {
+        max-width: 1524px;
+    }
+
+    .navbar-wrapper {
+        padding: 36px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-wrapper {
+        padding: 50px 0 50px 0;
+
+        @media (min-width: 600px) {
+            padding: 181px 0 300px 0;
+        }
+
+        .h-subscription {
+            margin-top: 22px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 95px;
+            flex-direction: column;
+
+            input[type = 'text'] {
+                display: block;
+                padding: 25px 30px 23px 30px;
+                border: none;
+                border-radius: 5px 5px 0 0;
+                max-width: 571px;
+                box-sizing: border-box;
+                flex-grow: 1;
+            }
+
+            input[type = 'submit'] {
+                display: none;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    color: wheat;
+                }
+            }
+
+            .button {
+                padding: 25px 41px 24px 41px;
+                border-radius: 0 0 5px 5px;
+
+                .sailboat-icon {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 11px;
+                    background: url('../images/sailboat-icon.png') center no-repeat;
+                }
+            }
+
+            @media (min-width: 600px) {
+                margin-top: 90px;
+                flex-direction: row;
+                align-items: stretch;
+                height: 60px;
+
+                input[type='text'] {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                .button {
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

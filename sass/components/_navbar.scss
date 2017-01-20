@@ -1,0 +1,62 @@
+nav {
+    position: relative;
+    color: $navbar-color;
+    margin-left: auto;
+
+
+    .menu-button {
+        display: block;
+
+        i {
+            font-size: 37px;
+        }
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: -15px;
+        top: 67px;
+        padding: 12px 0;
+        background-color: rgba(0, 0, 0, 0.65);
+
+        a {
+            display: block;
+            padding: 12px 39px;
+            color: #f9fafe;
+            font-family: $raleway;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+
+        li:hover a, li.active a{
+            color: wheat;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .menu-button {
+            display: none;
+        }
+
+        .navbar-menu {
+            display: flex !important;
+            position: static;
+            flex-direction: row;
+            background-color: transparent;
+            padding: 0;
+
+            &.dominate li a {
+                border: 1px solid transparent;
+                border-radius: 5px;
+                color: $navbar-color;
+            }
+
+            li:hover a, li.active a {
+                border-color: $navbar-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+header {
+    text-shadow: 0 0 10px black;
+
+    .navbar-menu {
+        color: #f9fafe;
+        font-family: $raleway;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    h1 {
+        color: $h-color-inverted;
+        font-family: $raleway;
+        font-weight: 700;
+
+        @media (min-width: 600px){
+            font-size: 72px;
+        }
+    }
+
+    .h-subscription {
+        color: $h-color-inverted;
+        font-family: $open-sans;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    form {
+        text-shadow: none;
+
+        input {
+            color: $header-input-color;
+            font-family: $raleway;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+h2 {
+    color: $h-color;
+    font-family: $raleway;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2.inverted {
+    color: $h-color-inverted;
+    font-family: $raleway;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.h-subscription {
+    color: $h-subscription-color;
+    font-family: $open-sans;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center
+}
+
+
+
+.destinations {
+    .destinations-item {
+        .item-counter {
+            color: $destination-item-counter-color;
+            font-family: $open-sans;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .item-name {
+            color: $destination-item-name-color;
+            font-family: $open-sans;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    .main-container {
+        .album {
+            .item-counter {
+
+            }
+
+            .item-place {
+                color: $album-text-color;
+                font-family: $raleway;
+                font-weight: 400;
+
+                .dock-name {
+                    font-size: 30px;
+                }
+
+                .counry {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

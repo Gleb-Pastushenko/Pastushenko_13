@@ -1,8 +1,14 @@
 @import "normalize/import-now";
 
 @import 'utils/variables';
+@import 'utils/reset';
 
 @import 'base/typography';
+
+@import 'components/borders';
+@import 'components/navbar';
+@import 'components/button';
+@import 'components/album';
 
 @import 'layout/grid';
 @import 'layout/header';

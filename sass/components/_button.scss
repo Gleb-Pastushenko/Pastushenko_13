@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid rgba(38, 38, 38, 0.3);
+    color: $button-text-color;
+    font-family: $raleway;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0.8em;
+    white-space: nowrap;
+}
+
+.button.inverted {
+    background-color: $decoration-color;
+    color: $button-text-color-inverted;
+    border: none;
+}
+
+.boats .button {
+    padding: 25px 45px;
+}
+
+footer .button {
+    padding: 15px 35px 17px 38px;
+}
+
+.featured-boats .button {
+    padding: 25px 50px 25px 48px;
+}
