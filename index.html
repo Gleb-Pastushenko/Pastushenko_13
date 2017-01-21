@@ -37,7 +37,9 @@
                 </label>
                 <input type="text" name="search" id="search" placeholder="WHAT IS YOUR DESTINATION, SAILOR?">
                 <input type="submit" value="FIND A BOAT" id="find-a-boat">
-                <a class="button inverted" href="#"><span class="sailboat-icon"></span><span>FIND A BOAT</span></a>
+                <a href="#" class="button inverted" onclick="findABoatSubmitClick()">
+                    <span class="sailboat-icon"></span><span>FIND A BOAT</span>
+                </a>
             </form>
         </div>
     </div>
@@ -193,7 +195,7 @@
                 </div>
             </div>
             <div class="button-wrapper">
-                <a class="button" href="#">EXPLORE MORE DESTINATIONS</a>
+                <a href="#" class="button">EXPLORE MORE DESTINATIONS</a>
             </div>
         </div>
     </section>
@@ -203,9 +205,9 @@
                 HAVE YOUR OWN BOAT?
             </div>
             <h2>NAVIGARE NECESSE EST, VIVERE NON EST NECESSE</h2>
-        </div>
-        <div class="button-wrapper">
-            <a class="button">MAKE MONEY WITH YOUR BOAT</a>
+            <div class="button-wrapper">
+                <a href="#" class="button inverted">MAKE MONEY WITH YOUR BOAT</a>
+            </div>
         </div>
     </section>
     <section class="featured-boats">
@@ -217,7 +219,7 @@
             <div class="album">
                 <div class="album-item">
                     <div class="item-photo">
-                        <img src="images/featured-boats-photo-2.jpg" alt="boat">
+                        <a href="#"><img src="images/featured-boats-photo-1.jpg" alt="boat"></a>
                     </div>
                     <div class="item-info">
                         <div class="price">
@@ -227,45 +229,45 @@
                             Delphia 47
                         </div>
                         <div class="info">
-                            <div class="location">
+                            <a href="#" class="location">
                                 <span class="icon"></span>
                                 <span class="count">Gdańsk, Poland</span>
-                            </div>
-                            <div class="berth-number">
+                            </a>
+                            <a href="#" class="berth-number">
                                 <span class="icon"></span>
                                 <span class="count">8</span>
                                 <span>Berths</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="album-item">
                     <div class="item-photo">
-                        <img src="images/featured-boats-photo-3.jpg" alt="boat">
+                        <a href="#"><img src="images/featured-boats-photo-2.jpg" alt="boat"></a>
                     </div>
                     <div class="item-info">
                         <div class="price">
                             €820 / day
                         </div>
-                        <div class="model-name item-info">
+                        <div class="model-name">
                             Crusier 51
                         </div>
-                        <div class="info item-info">
-                            <div class="location">
+                        <div class="info">
+                            <a href="#" class="location">
                                 <span class="icon"></span>
                                 <span class="count">Palma de Mallorca, Spain</span>
-                            </div>
-                            <div class="berth-number">
+                            </a>
+                            <a href="#" class="berth-number">
                                 <span class="icon"></span>
                                 <span class="count">12</span>
                                 <span>Berths</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="album-item">
                     <div class="item-photo">
-                        <img src="images/featured-boats-photo-4.jpg" alt="boat">
+                        <a href="#"><img src="images/featured-boats-photo-3.jpg" alt="boat"></a>
                     </div>
                     <div class="item-info">
                         <div class="price">
@@ -275,21 +277,21 @@
                             Crusier 41S
                         </div>
                         <div class="info">
-                            <div class="location">
+                            <a href="#" class="location">
                                 <span class="icon"></span>
                                 <span class="count">Lisbon, Portugal</span>
-                            </div>
-                            <div class="berth-number">
+                            </a>
+                            <a href="#" class="berth-number">
                                 <span class="icon"></span>
                                 <span class="count">10</span>
                                 <span>Berths</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="album-item">
                     <div class="item-photo">
-                        <img src="images/featured-boats-photo-5.jpg" alt="boat">
+                        <a href="#"><img src="images/featured-boats-photo-4.jpg" alt="boat"></a>
                     </div>
                     <div class="item-info">
                         <div class="price">
@@ -299,21 +301,21 @@
                             Delphia 47
                         </div>
                         <div class="info">
-                            <div class="location">
+                            <a href="#" class="location">
                                 <span class="icon"></span>
                                 <span class="count">Gdańsk, Poland </span>
-                            </div>
-                            <div class="berth-number">
+                            </a>
+                            <a href="#" class="berth-number">
                                 <span class="icon"></span>
                                 <span class="count">8</span>
                                 <span>Berths</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="button-wrapper">
-                <a class="button">LOAD MORE BOATS</a>
+                <a href="#" class="button">LOAD MORE BOATS</a>
             </div>
         </div>
     </section>
@@ -322,7 +324,7 @@
     <div class="border">
     </div>
     <div class="main-container">
-        <div class="locations">
+        <div class="footer-locations">
             <div class="title">
                 TOP LOCATIONS
             </div>
@@ -334,7 +336,7 @@
                 <li>Incididunt ut labore</li>
             </ul>
         </div>
-        <div class="boats">
+        <div class="footer-boats">
             <div class="title">
                 FEATURED BOATS
             </div>
@@ -345,33 +347,37 @@
                 <li>Eiusmod tempor</li>
             </ul>
         </div>
-        <div class="subscribe">
+        <div class="footer-subscribe">
             <div class="title">
                 SUBSCRIBE TO OUR NEWSLETTER
             </div>
             <div class="form">
                 <form name="subscribe" method="post">
-                    <input type="email" name="email" placeholder="your email address" id="email">
+                    <input type="email" name="email" placeholder="Your email address" id="email">
                     <label for="email"></label>
-                    <input type="submit" value="subscribe">
+                    <input type="submit" value="subscribe" id="subscribe">
+                    <a href="#" class="button inverted" onclick="subscribeClick()">SUBSCRIBE</a>
                 </form>
             </div>
             <ul class="socials">
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li class="active"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-        <div class="contact-us">
-            CONTACT US
+        <div class="footer-contact-us">
+            <div class="title">
+                CONTACT US
+
+            </div>
+            <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Sit amet consectetur</li>
+                <li>Adipisicing elit</li>
+                <li>Eiusmod tempor</li>
+                <li>Incididunt ut labore</li>
+            </ul>
         </div>
-        <ul>
-            <li>Lorem ipsum dolor</li>
-            <li>Sit amet consectetur</li>
-            <li>Adipisicing elit</li>
-            <li>Eiusmod tempor</li>
-            <li>Incididunt ut labore</li>
-        </ul>
     </div>
 </footer>
 <script

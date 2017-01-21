@@ -11,5 +11,11 @@ function mainMenuToggle() {
 }
 
 function findABoatSubmitClick() {
-    document.getElementById('find-a-boat').onClick();
+    var event=new Event('click');
+    document.getElementById('find-a-boat').dispatchEvent(event);
+}
+
+function subscribeClick() {
+    var event=new Event('click');
+    document.getElementById('subscribe').dispatchEvent(event);
 }

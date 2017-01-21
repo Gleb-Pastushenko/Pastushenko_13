@@ -60,8 +60,6 @@ h2.inverted {
     text-align: center
 }
 
-
-
 .destinations {
     .destinations-item {
         .item-counter {
@@ -99,5 +97,79 @@ h2.inverted {
                 }
             }
         }
+    }
+}
+
+.boats {
+    text-shadow: 0 0 10px black;
+
+    .pre-header {
+        color: $h-color-inverted;
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: 40px;
+
+        @media (min-width: 600px) {
+            font-size: 72px;
+        }
+    }
+
+    h2 {
+        color: $h-color-inverted;
+        font-family: $open-sans;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .button {
+        text-shadow: none;
+    }
+}
+
+.featured-boats {
+    .album {
+        .model-name {
+            font-family: $raleway;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .info {
+            font-family: $open-sans;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .album-item {
+            a {
+                color: white;
+
+                &:hover {
+                    color: wheat;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .title {
+        font-family: $raleway;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    ul {
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    input[type="email"] {
+        color: $footer-input-color;
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: 400;
     }
 }

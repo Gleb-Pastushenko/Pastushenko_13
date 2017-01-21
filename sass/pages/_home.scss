@@ -54,7 +54,8 @@
                     border-right: transparent;
                 }
             }
-        } //media
+        }
+        //media
     }
 
     .main-container {
@@ -96,7 +97,6 @@
                     }
                 }
 
-
                 position: relative;
                 padding: 15px;
 
@@ -134,20 +134,182 @@
         }
 
         .button-wrapper {
-            margin-top: 98px;
+            margin-top: 50px;
             text-align: center;
 
             .button {
-                padding: 25px 43px 24px 43px;
-
                 &:hover {
                     box-shadow: 0 0 10px 1px gray;
+                }
+
+                padding: 25px 37px 24px 37px;
+
+                @media (min-width: 600px) {
+                    padding: 25px 43px 24px 43px;
                 }
             }
         }
 
-        padding-bottom: 80px;
-    } //main-container
+        padding-bottom: 40px;
+
+        @media (min-width: 600px) {
+            padding-bottom: 80px;
+
+            .button-wrapper {
+                margin-top: 98px;
+            }
+        }
+    }//main-container
 }
 
+.boats {
+    background: url('../images/boats-background.jpg') no-repeat center/cover;
+    text-align: center;
 
+    .main-container {
+        padding-top: 70px;
+        padding-bottom: 50px;
+
+        @media (min-width: 600px) {
+            padding-top: 188px;
+            padding-bottom: 159px;
+        }
+
+        .pre-header {
+            margin: -0.1em 0 30px 0;
+        }
+
+        h2 {
+            color: $h-color-inverted;
+        }
+
+        .button {
+            padding: 25px 35px;
+            margin-top: 40px;
+
+            &:hover {
+                color: wheat;
+            }
+
+            @media (min-width: 600px) {
+                padding: 25px 51px;
+                margin-top: 86px;
+            }
+        }
+    }
+}
+
+.featured-boats {
+    .main-container {
+        padding: 50px 15px 40px 15px;
+
+        h2 {
+            margin: -0.1em 0;
+        }
+
+        .h-subscription {
+            margin: 30px 0 -0.1em 0;
+        }
+
+        .album {
+            margin: 50px -15px -15px -15px;
+            color: white;
+
+            .album-item {
+                padding: 15px 13px;
+
+                &:hover {
+                    .item-photo {
+                        img {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+
+            .item-photo {
+                font-size: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            .price {
+                z-index: 1;
+                display: inline-block;
+                padding: 13px;
+                border-radius: 5px;
+                background-color: $decoration-color;
+                color: $album-text-color;
+                font-family: $open-sans;
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: auto;
+            }
+
+            .model-name {
+                z-index: 1;
+            }
+
+            .info {
+                z-index: 1;
+                display: flex;
+                margin-top: 16px;
+
+                .location {
+
+                    display: flex;
+                    align-items: center;
+                    margin-right: 30px;
+
+                    .icon {
+                        display: inline-block;
+                        width: 13px;
+                        height: 17px;
+                        background: url('../images/location.png') center no-repeat;
+                        margin-right: 9px;
+                    }
+                }
+
+                .berth-number {
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        display: inline-block;
+                        width: 22px;
+                        height: 14px;
+                        background: url('../images/berths.png') center no-repeat;
+                        margin-right: 9px;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                background-color: black;
+                border-radius: 5px;
+            }
+        }
+
+        .button-wrapper {
+            margin-top: 50px;
+            text-align: center;
+
+            .button:hover {
+                box-shadow: 0 0 10px 1px gray;
+            }
+        }
+
+        @media (min-width: 600px) {
+            padding: 101px 15px 87px 15px;
+
+            .album {
+                margin-top: 78px;
+            }
+
+            .button-wrapper {
+                margin-top: 115px;
+            }
+        }
+    }
+}
